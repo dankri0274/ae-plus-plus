@@ -23,9 +23,9 @@
 - [ ] Make better error system
 - [ ] Make better docs
 
-## Innstallering
+## Installering
 
-## Windows
+### Windows
 
 ---
 
@@ -33,13 +33,19 @@ Du trenger følgende installert:
 
 - [python](https://www.python.org/)
 - [git](https://git-scm.com/)
-- [rust](https://www.rust-lang.org/)
+- [rust](https://www.rust-lang.org/tools/install)
 
-``` txt
+```txt
 git clone https://github.com/kegma1/ae-plus-plus.git
 cd .\ae-plus-plus
 python.exe .\install.py
-.\aepp.exe <-Flagg> [./Sti]
+.\aepp.exe {-Flagg} [./Sti]
+```
+
+For å legge Æ++ til i PATH bruk følgende kommando i PowerShell:  
+
+```ps1
+cp .\aepp.exe "C:\Users\$env:USERNAME"; $env:Path += ";C:\Users\env:USERNAME\aepp.exe";
 ```
 
 ## Flagg
@@ -145,7 +151,7 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ## omgjør
 
-``` txt
+```txt
  "69"   Int omgjør
 # ^verdi ^type
 skriv  # vil skrive ut 69 som et Int
@@ -153,7 +159,7 @@ skriv  # vil skrive ut 69 som et Int
 
 ## konst
 
-``` txt
+```txt
 konst x 35 34 + slutt
 
 x skriv  # dette vil skrive ut 69
@@ -166,7 +172,7 @@ Når du skriver minnenavnet vil den dytte en peker til det første elementet i b
 Du kan velge andre elementer i bufferen med "`+`" eller "`-`".  
 For eksempel hvis x har en lengde på 10 og peker til adresse 20 vil denne koden **`x 5 +`** skape en peker som peker til adresse 25.
 
-``` txt
+```txt
 minne x Helt 3 slutt
 1 x ->
 2 x 1 + ->
@@ -179,7 +185,7 @@ Minnet vil se ut som: `| 1 | 2 | 3 | | | | |...`
 
 ## Hvis og ellers
 
-``` txt
+```txt
 "Skriv et tall: " spør Int omgjør
 hvis 10 > gjør
     "større enn 10"
@@ -191,7 +197,7 @@ skrivnl
 
 ## Ellvis
 
-``` txt
+```txt
 "Skriv et tall: " spør Int omgjør
 hvis dup 10 > gjør
     "større enn 10"
@@ -205,7 +211,7 @@ skrivnl
 
 ## Når løkker
 
-``` txt
+```txt
 0 når dup 15 <= gjør
     dup skrivnl
     1 +
@@ -215,7 +221,7 @@ slutt
 
 ## Let bindinger
 
-``` txt
+```txt
 1 2 3
 
 let x y z inni
@@ -247,7 +253,7 @@ slutt
 En streng er i bunn og grunn en peker til en bokstavbuffer.  
 Dette vil si at hvis man ønsker å endre på en streng kan man omgjøre streng-pekeren til en standard peker ved hjelp av slik.
 
-``` txt
+```txt
 "hallo\n" Pek omgjør
 dup "m" snu -> 1 + feilsøk
 dup "o" snu -> 1 +
