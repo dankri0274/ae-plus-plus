@@ -48,6 +48,8 @@ For å legge Æ++ til i PATH bruk følgende kommando i PowerShell:
 cp .\aepp.exe "C:\Users\$env:USERNAME"; $env:Path += ";C:\Users\env:USERNAME\aepp.exe";
 ```
 
+Nå kan du bruke aepp.exe fra hvor du måtte ønske på PC-en din  
+
 ## Flagg
 
 ---
