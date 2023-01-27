@@ -35,10 +35,10 @@ Du trenger følgende installert:
 - [git](https://git-scm.com/)
 - [rust](https://www.rust-lang.org/tools/install)
 
-```txt
+```ps1
 git clone https://github.com/kegma1/ae-plus-plus.git
 cd .\ae-plus-plus
-python.exe .\install.py
+python.exe .\install.py {-addpath} # legger til .\aepp.exe i windows path
 .\aepp.exe {-Flagg} [./Sti]
 ```
 
