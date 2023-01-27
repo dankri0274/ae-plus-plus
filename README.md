@@ -1,37 +1,41 @@
-# Æ++
+# Æ++ | Programmeringsspråk på norsk
 
-Programmeringsspråk på norsk
-
-## todo
+## Progress
 
 - [x] Reworked runtime and execution
-- [x] rework strings and memory
+- [x] Rework strings and memory
 - [x] Add memory read and write
 - [x] Add string manipulation
-- [x] pointer manipulation
+- [x] Pointer manipulation
 - [x] Add type casting
 - [x] Add rest of stack operators
 - [x] Add constants
 - [x] Add Else-if
 - [x] Add functions
-- [x] make printing better
-- [ ] drop memory
-- [x] scoping
-- [ ] implement pointer struct for memory safety
-- [ ] structure
-- [ ] var
-- [ ] local mem
+- [x] Make printing better
+- [ ] Drop memory
+- [x] Scoping
+- [ ] Implement pointer struct for memory safety
+- [ ] Structure
+- [ ] Var
+- [ ] Local mem
 - [ ] Add import
 - [ ] Make better error system
 - [ ] Make better docs
 
-## Hvordan bruke
+## Innstallering
 
 ## Windows
 
-Du trenger [git](https://git-scm.com/) og [rust](https://www.rust-lang.org/) installert først
+---
 
-``` sh
+Du trenger følgende installert:  
+
+- [python](https://www.python.org/)
+- [git](https://git-scm.com/)
+- [rust](https://www.rust-lang.org/)
+
+``` txt
 git clone https://github.com/kegma1/ae-plus-plus.git
 cd .\ae-plus-plus
 python.exe .\install.py
@@ -40,12 +44,16 @@ python.exe .\install.py
 
 ## Flagg
 
+---
+
 Flagg er frivillig.
 | Flagg |Beskrivelse|
 |:-----:|:------------|
 | `-d`  | Debug flagg, vil skrive ut stabelen når programmet kræsjer.|
 
 ## Referanse
+
+---
 
 ### Stack
 
@@ -79,6 +87,8 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ## Operasjoner
 
+---
+
 ### Matteoperasjoner
 
 | Operasjon  | Æ++      | C-ekvivalent |
@@ -96,7 +106,7 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 | og        | `a b og`    | `a && b`     |
 | eller     | `a b eller` | `a \|\| b`   |
 
-### likhetsoperasjoner
+### Likhetsoperasjoner
 
 | Operasjon   | Æ++      | C-ekvivalent |
 |:-----------:|:--------:|:-------------|
@@ -118,6 +128,8 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ## Typer
 
+---
+
 | Navn  | Beskrivelse |
 |:-----:|:------------|
 | Helt  | `i32`         |
@@ -127,7 +139,11 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 | Pek   | `Ptr`         |
 | Bokst | `Char`        |
 
-## Nøkkelord: omgjør
+## Nøkkelord
+
+---
+
+## omgjør
 
 ``` txt
  "69"   Int omgjør
@@ -135,7 +151,7 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 skriv  # vil skrive ut 69 som et Int
 ```
 
-## Nøkkelord: konst
+## konst
 
 ``` txt
 konst x 35 34 + slutt
@@ -143,12 +159,12 @@ konst x 35 34 + slutt
 x skriv  # dette vil skrive ut 69
 ```
 
-## Nøkkelord: minne
+## minne
 
 Når man definerer et minne trenger man (*i rekkefølge*) et navn, en type og en lengde på hvor stor buffer vi skal dekke.  
-Når du skriver minnenavnet vil den dytte en peker til det første elementet i bufferen, du kan lagre data ved "."-operatoren og lese data med ",".  
-Du kan velge andre elementer i bufferen med "+" eller "-".  
-For eksempel hvis x har en lengde på 10 og peker til adresse 20 vil denne koden `x 5 +` skape en peker som peker til adresse 25.
+Når du skriver minnenavnet vil den dytte en peker til det første elementet i bufferen, du kan lagre data med "`.`"-operatoren og lese data med "`.`".  
+Du kan velge andre elementer i bufferen med "`+`" eller "`-`".  
+For eksempel hvis x har en lengde på 10 og peker til adresse 20 vil denne koden **`x 5 +`** skape en peker som peker til adresse 25.
 
 ``` txt
 minne x Helt 3 slutt
@@ -161,7 +177,7 @@ x 1 + @ skrivnl # skriver ut 2
 
 Minnet vil se ut som: `| 1 | 2 | 3 | | | | |...`
 
-### Hvis og ellers
+## Hvis og ellers
 
 ``` txt
 "Skriv et tall: " spør Int omgjør
@@ -173,7 +189,7 @@ slutt
 skrivnl
 ```
 
-### Ellvis
+## Ellvis
 
 ``` txt
 "Skriv et tall: " spør Int omgjør
@@ -187,7 +203,7 @@ slutt
 skrivnl
 ```
 
-### Når løkker
+## Når løkker
 
 ``` txt
 0 når dup 15 <= gjør
@@ -197,7 +213,7 @@ slutt
 # Skriver ut alle tallene fra 0 til 15
 ```
 
-### Let bindinger
+## Let bindinger
 
 ``` txt
 1 2 3
@@ -210,23 +226,26 @@ slutt
 skrivnl # Skriver ut 2
 ```
 
-### Funksjoner
+## Funksjoner
+
+---
 
 Før du kaller en funksjon må du passe på at du har alle argumentene i rett rekkefølge.  
 Når funksjonen blir utført vil du bare ha tilgang til de verdiene som ble gitt når den ble kalt.  
 Når funksjonen er kommet til slutten vil den dytte retur-verdien til toppen av forrige stabel.
 
 ``` txt
-# funk <navn> <argument typer> -- <retur type> inni
+# funk <navn> <argument type> -- <retur-type> inni
 funk sum Helt Helt -- Helt inni
     x
 slutt
 2 2 sum skrivnl # skriver-ut 4
 ```
 
-## Streng manipulasjon
+## Strengmanipulasjon
 
-En streng er i bunn og grunn en peker til en bokstav buffer. dette vil si at hvis man ønsker å endre på en streng kan man omgjøre streng-pekeren til en standard peker ved hjelp av slik
+En streng er i bunn og grunn en peker til en bokstavbuffer.  
+Dette vil si at hvis man ønsker å endre på en streng kan man omgjøre streng-pekeren til en standard peker ved hjelp av slik.
 
 ``` txt
 "hallo\n" Pek omgjør
@@ -236,5 +255,5 @@ dup "r" snu -> 1 +
 dup "d" snu -> 1 +
 dup "i" snu -> 1 +
 5 - Str omgjør 
-skrivnl # skriver ut mordi
+skrivnl # skriver ut "mordi"
 ```
