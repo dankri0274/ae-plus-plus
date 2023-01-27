@@ -11,6 +11,7 @@ if name == "nt":
 	os.rename("./target/release/ae-plus-plus.exe", "./aepp.exe")
 
 	subprocess.run(["powershell", "-Command", cmd])
+
 	if sys.argv[1] == "-addpath":
 		subprocess.run(["powershell", "-Command", cmd2])
 else:
