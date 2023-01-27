@@ -147,7 +147,8 @@ x skriv  # dette vil skrive ut 69
 
 Når man definerer et minne trenger man (*i rekkefølge*) et navn, en type og en lengde på hvor stor buffer vi skal dekke.  
 Når du skriver minnenavnet vil den dytte en peker til det første elementet i bufferen, du kan lagre data ved "."-operatoren og lese data med ",".  
-Du kan velge andre elementer i bufferen med "+" eller "-". foreksempel hvis x har en lengde på 10 og peker til adresse 20 vil denne koden `x 5 +` skape en peker som peker til adresse 25.
+Du kan velge andre elementer i bufferen med "+" eller "-".  
+For eksempel hvis x har en lengde på 10 og peker til adresse 20 vil denne koden `x 5 +` skape en peker som peker til adresse 25.
 
 ``` txt
 minne x Helt 3 slutt
