@@ -55,9 +55,9 @@ Nå kan du bruke aepp.exe fra hvor du måtte ønske på PC-en din
 ---
 
 Flagg er frivillig.
-| Flagg | Beskrivelse |
-|:------|:------------|
-| `-d`  | Debug flagg, vil skrive ut stabelen når programmet kræsjer.|
+| Flagg | Beskrivelse                                                 |
+| :---- | :---------------------------------------------------------- |
+| `-d`  | Debug flagg, vil skrive ut stabelen når programmet kræsjer. |
 
 ## Referanse
 
@@ -99,53 +99,53 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ### Matteoperasjoner
 
-| Operasjon  | Æ++      | C            |
-|:----------:|:--------:|:------------:|
-| +          | `a b +`  | `a + b`      |
-| -          | `a b -`  | `a - b`      |
-| *          | `a b*`   | `a * b`      |
-| /          | `a b /`  | `a % b` **eller** `a / b`  |
+| Operasjon |   Æ++   |             C             |
+| :-------: | :-----: | :-----------------------: |
+|     +     | `a b +` |          `a + b`          |
+|     -     | `a b -` |          `a - b`          |
+|     *     | `a b*`  |          `a * b`          |
+|     /     | `a b /` | `a % b` **eller** `a / b` |
 
 ### Logiske operasjoner
 
-| Operasjon | Æ++         | C            |
-|:---------:|:-----------:|:------------:|
-| ikke      | `a ikke`    | `!a`         |
-| og        | `a b og`    | `a && b`     |
-| eller     | `a b eller` | `a \|\| b`   |
+| Operasjon |     Æ++     |     C      |
+| :-------: | :---------: | :--------: |
+|   ikke    |  `a ikke`   |    `!a`    |
+|    og     |  `a b og`   |  `a && b`  |
+|   eller   | `a b eller` | `a \|\| b` |
 
 ### Likhetsoperasjoner
 
-| Operasjon   | Æ++      | C            |
-|:-----------:|:--------:|:------------:|
-| =           | `a b =`  | `a == b`     |
-| <           | `a b <`  | `a < b`      |
-| >           | `a b >`  | `a > b`      |
-| <=          | `a b <=` | `a <= b`     |
-| >=          | `a b >=` | `a >= b`     |
+| Operasjon |   Æ++    |    C     |
+| :-------: | :------: | :------: |
+|     =     | `a b =`  | `a == b` |
+|     <     | `a b <`  | `a < b`  |
+|     >     | `a b >`  | `a > b`  |
+|    <=     | `a b <=` | `a <= b` |
+|    >=     | `a b >=` | `a >= b` |
 
 ### Stabeloperasjoner
 
-| Operasjon | Før    | Etter   |
-|:---------:|:------:|:-------:|
-| dup       | `a`    | `a a`   |
-| rot       | `a b c`| `b c a` |
-| slipp     | `a b`  | `a`     |
-| snu       | `a b`  | `b a`   |
-| over      | `a b`  | `a b a` |
+| Operasjon |   Før   |  Etter  |
+| :-------: | :-----: | :-----: |
+|    dup    |   `a`   |  `a a`  |
+|    rot    | `a b c` | `b c a` |
+|   slipp   |  `a b`  |   `a`   |
+|    snu    |  `a b`  |  `b a`  |
+|   over    |  `a b`  | `a b a` |
 
 ## Typer
 
 ---
 
-| Navn  | Beskrivelse   |
-|:-----:|:-------------:|
-| Helt  | `i32`         |
-| Flyt  | `f32`         |
-| Bool  | `bool`        |
-| Str   | `string`      |
-| Pek   | `Ptr`         |
-| Bokst | `Char`        |
+| Navn  | Beskrivelse |
+| :---: | :---------: |
+| Helt  |    `i32`    |
+| Flyt  |    `f32`    |
+| Bool  |   `bool`    |
+|  Str  |  `string`   |
+|  Pek  |    `Ptr`    |
+| Bokst |   `Char`    |
 
 ## Nøkkelord
 
