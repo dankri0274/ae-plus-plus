@@ -55,8 +55,8 @@ Nå kan du bruke aepp.exe fra hvor du måtte ønske på PC-en din
 ---
 
 Flagg er frivillig.
-| Flagg |Beskrivelse|
-|:-----:|:------------|
+| Flagg | Beskrivelse |
+|:------|:------------|
 | `-d`  | Debug flagg, vil skrive ut stabelen når programmet kræsjer.|
 
 ## Referanse
@@ -74,22 +74,22 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 -------------------------------------------------------
 35
 ----------------
-|35|  |  |  |      <- dytter 35 til stabelen
+|35|  |  |  |      <- Dytter 35 til stabelen
 ----------------
 
 34
 ----------------
-|35|34|  |  |      <- dytter 34 til stabelen
+|35|34|  |  |      <- Dytter 34 til stabelen
 ----------------
 
 +
 ----------------
-|  |  |  |  |      -> poper de to øverste tallene på stabelen
+|  |  |  |  |      -> Fjerner de to øverste tallene på stabelen
 ----------------
 
 +
 ----------------
-|69|  |  |  |      <- dytter summen på stabelen
+|69|  |  |  |      <- Dytter summen til stabelen
 ----------------
 ```
 
@@ -99,8 +99,8 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ### Matteoperasjoner
 
-| Operasjon  | Æ++      | C-ekvivalent |
-|:----------:|:--------:|:-------------|
+| Operasjon  | Æ++      | C            |
+|:----------:|:--------:|:------------:|
 | +          | `a b +`  | `a + b`      |
 | -          | `a b -`  | `a - b`      |
 | *          | `a b*`   | `a * b`      |
@@ -108,16 +108,16 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ### Logiske operasjoner
 
-| Operasjon | Æ++         | C-ekvivalent |
-|:---------:|:-----------:|:-------------|
+| Operasjon | Æ++         | C            |
+|:---------:|:-----------:|:------------:|
 | ikke      | `a ikke`    | `!a`         |
 | og        | `a b og`    | `a && b`     |
 | eller     | `a b eller` | `a \|\| b`   |
 
 ### Likhetsoperasjoner
 
-| Operasjon   | Æ++      | C-ekvivalent |
-|:-----------:|:--------:|:-------------|
+| Operasjon   | Æ++      | C            |
+|:-----------:|:--------:|:------------:|
 | =           | `a b =`  | `a == b`     |
 | <           | `a b <`  | `a < b`      |
 | >           | `a b >`  | `a > b`      |
@@ -127,7 +127,7 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 ### Stabeloperasjoner
 
 | Operasjon | Før    | Etter   |
-|:---------:|:------:|:--------|
+|:---------:|:------:|:-------:|
 | dup       | `a`    | `a a`   |
 | rot       | `a b c`| `b c a` |
 | slipp     | `a b`  | `a`     |
@@ -138,8 +138,8 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ---
 
-| Navn  | Beskrivelse |
-|:-----:|:------------|
+| Navn  | Beskrivelse   |
+|:-----:|:-------------:|
 | Helt  | `i32`         |
 | Flyt  | `f32`         |
 | Bool  | `bool`        |
