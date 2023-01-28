@@ -3,17 +3,22 @@ import sys
 import subprocess
 from os import name, system
 
-cmd = "Copy-Item .\\aepp.exe \"C:\\Users\\$env:USERNAME\";"
-cmd2 = "$env:Path += \";C:\\Users\\env:USERNAME\\.\\aepp.exe\""
+#! UNSTABLE! MIGHT DELETE YOUR USER ENVIRONMENT VARIABLES! BACK THEM UP BEFORE USE!
+
+if not sys.argv[1]:
+	pass
+else:
+	addPath = sys.argv[1]
+
 
 if name == "nt":
 	os.system("cargo build --release")
 	os.rename("./target/release/ae-plus-plus.exe", "./aepp.exe")
 
-	subprocess.run(["powershell", "-Command", cmd])
+	subprocess.run(["powershell", "-Command", "Copy-Item .\\aepp.exe \"C:\\Users\\$env:USERNAME\"; Write-Host \"File moved to C:\\Users\\$env:USERNAME\" -f Green"])
 
-	if sys.argv[1] == "-addpath":
-		subprocess.run(["powershell", "-Command", cmd2])
+	if addPath == "-addpath":
+		subprocess.run(["powershell", "-Command", "[Environment]::SetEnvironmentvariable(\"Path\", \";C:\\Users\\$env:USERNAME\\aepp.exe\", \"User\"); Write-Host \"Program added to PATH\" -f DarkRed"])
 else:
-	# Add solution for Linux/MacOS later
+	# Add support for Linux and MacOS later
 	os.system("")
