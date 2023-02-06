@@ -52,16 +52,12 @@ Nå kan du bruke aepp.exe fra hvor du måtte ønske på PC-en din
 
 ## Flagg
 
----
-
 Flagg er frivillig.
 | Flagg | Beskrivelse                                                 |
 | :---- | :---------------------------------------------------------- |
 | `-d`  | Debug flagg, vil skrive ut stabelen når programmet kræsjer. |
 
 ## Referanse
-
----
 
 ### Stack
 
@@ -94,8 +90,6 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 ```
 
 ## Operasjoner
-
----
 
 ### Matteoperasjoner
 
@@ -136,8 +130,6 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 
 ## Typer
 
----
-
 | Navn  | Beskrivelse |
 | :---: | :---------: |
 | Helt  |    `i32`    |
@@ -148,8 +140,6 @@ Under er et simpelt program som plusser to Int sammen, og hvordan hver operasjon
 | Bokst |   `Char`    |
 
 ## Nøkkelord
-
----
 
 ## omgjør
 
@@ -235,8 +225,6 @@ skrivnl # Skriver ut 2
 ```
 
 ## Funksjoner
-
----
 
 Før du kaller en funksjon må du passe på at du har alle argumentene i rett rekkefølge.  
 Når funksjonen blir utført vil du bare ha tilgang til de verdiene som ble gitt når den ble kalt.  
